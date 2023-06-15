@@ -47,6 +47,8 @@ function parseExpression(expression) {
   expression = expression.replace(/π/g, "Math.PI");
   expression = expression.replace(/pi/g, "Math.PI");
   expression = expression.replace(/e/g, "Math.E");
+  expression = expression.replace(/(\d+)([a-zA-Z])/g, "$1*$2");
+ 
   return expression;
 }
 
