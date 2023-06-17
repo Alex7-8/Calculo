@@ -13,7 +13,7 @@ function calcularTeoremaValorMedio() {
         generarGrafica(a, b, funcion);
         document.getElementById("resultado").innerHTML = "El resultado del Teorema del Valor Medio es: " + valorMedio.toFixed(2);
     } else {
-        alert("Ingresa valores numéricos válidos para los extremos a y b, y asegúrate de que a sea menor que b.");
+       // alert("Ingresa valores numéricos válidos para los extremos a y b, y asegúrate de que a sea menor que b.");
     }
 }
 

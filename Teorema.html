@@ -79,9 +79,10 @@
                 </div>
                 <div class="my-3">
                     <label style="margin: 5px;" class="input-label" for="x-value-input">Extremo b:</label>
-                    <input type="number" id="extremo-b" class="form-control" placeholder="Ingrese el valor de x">
+                    <input type="number" id="extremo-b" class="form-control"  placeholder="Ingrese el valor de x">
                 </div>
-                <button class="btn btn-primary my-3"  onclick="calcularTeoremaValorMedio()">Calcular</button>
+                <button class="btn btn-primary my-3"  onclick="calcularTeoremaValorMedio()"><i class="fas fa-calculator"></i> Calcular</button>
+                <button class="btn btn-secondary my-3" onclick="resetFields()"><i class="fas fa-eraser"></i> Limpiar</button>
             </div>
             <div style="display:flex ;"  class="col-lg-6">
                 <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="my-3 p-3 bg-white">
@@ -125,5 +126,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/Teorema.js"></script>
+    <script>
+        function resetFields() {
+            document.getElementById("funcion-fx").value = "";
+            document.getElementById("extremo-a").value = "";
+            document.getElementById("extremo-b").value = "";
+            document.getElementById("resultado").innerHTML = "";
+        }
+    </script>
 </body>
 </html>
